@@ -1,0 +1,205 @@
+.container-resp {
+  display: none;
+}
+
+body {
+  background: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 700px;
+  width: 800px;
+  border-radius: 20px;
+  margin: auto;
+  background: white;
+  display: flex;
+}
+
+.tarjeta-perfume {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tarjeta-perfume-container {
+  order: 2;
+  width: 50%;
+  margin: 35px;
+}
+
+.img-tarjeta {
+  display: flex;
+  background-repeat: round;
+  background-size: 100%;
+  width: 50%;
+}
+
+.imagen {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.titulo {
+  margin: 0;
+  color: gray;
+  letter-spacing: 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.subtitulo {
+  margin: 0;
+  padding-top: 25px;
+  font-family: "Abril Fatface", cursive;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.descripcion {
+  margin: 0;
+  padding-top: 25px;
+  color: gray;
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+.precio {
+  font-family: "Abril Fatface", cursive;
+  color: #5f9b6b;
+  font-size: 3em;
+}
+
+.precio-anterior {
+  margin-right: 20px;
+  color: gray;
+  text-decoration: line-through;
+  vertical-align: middle;
+}
+
+.boton1 {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Fredoka One", cursive;
+  font-size: 20px;
+  padding: 15px 100px 15px 100px;
+  border-radius: 10px;
+  background: #5f9b6b;
+  color: white;
+  margin: auto;
+}
+
+.boton1:hover {
+  background: #224e2b;
+}
+
+.precio-container {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+    height: 700px;
+    width: 350px;
+    margin: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+  }
+  .tarjeta-perfumer-resp {
+    background-color: white;
+  }
+
+  .titulo {
+    margin: 0;
+    color: gray;
+    letter-spacing: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .subtitulo {
+    margin: 0;
+    padding-top: 25px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+  .descripcion {
+    margin: 0;
+    padding-top: 25px;
+    color: gray;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+  }
+
+  .precio-container {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .precio {
+    font-family: "Abril Fatface", cursive;
+    color: #5f9b6b;
+    font-size: 2.5em;
+  }
+  .precio-anterior {
+    margin: 40px;
+    color: gray;
+    text-decoration: line-through;
+    vertical-align: middle;
+  }
+
+  .boton {
+    margin: auto;
+    text-decoration: none;
+    font-family: "Fredoka One", cursive;
+    font-size: 20px;
+    padding: 15px 100px;
+    border-radius: 10px;
+    background: #5f9b6b;
+    color: white;
+    margin: auto;
+  }
+
+  .img-tarjeta {
+    display: flex;
+  }
+
+  .imagen2 {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-grow: 10;
+  }
+}
